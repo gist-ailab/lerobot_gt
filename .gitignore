@@ -166,6 +166,10 @@ wandb/
 # Data folders
 data/
 outputs/
+transform/*dataset*
+transform/*CupToBox*
+transform/pusht
+transform/so100
 
 # Translations
 *.mo

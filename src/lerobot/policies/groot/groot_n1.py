@@ -35,11 +35,8 @@ else:
     PretrainedConfig = object
     PreTrainedModel = object
     BatchFeature = None
-
-try:
-    import tree
-except ImportError:
-    tree = None
+    
+import tree
 
 from lerobot.policies.groot.action_head.flow_matching_action_head import (
     FlowmatchingActionHead,

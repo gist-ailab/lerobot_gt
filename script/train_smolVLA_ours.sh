@@ -1,0 +1,11 @@
+lerobot-train \
+  --dataset.repo_id=ryk012/c \
+  --dataset.root=./transform/CTB_lerobot_dataset_3.0 \
+  --policy.type=smolvla \
+  --output_dir=outputs/train/smolVLA_ours \
+  --job_name=smol_VLA \
+  --policy.device=cuda \
+  --batch_size=8 \
+  --steps=100000 \
+  --policy.push_to_hub=false \
+  --wandb.enable=true

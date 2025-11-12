@@ -1,0 +1,12 @@
+lerobot-train \
+  --dataset.repo_id=ryk012/ctb_dataset \
+  --dataset.root=./transform/CTB_lerobot_dataset_3.0 \
+  --policy.type=groot \
+  --output_dir=outputs/train/gr00t_ours \
+  --job_name=gr00t \
+  --policy.device=cuda \
+  --batch_size=8 \
+  --steps=100000 \
+  --policy.push_to_hub=false \
+  --policy.tune_projector=false \
+  --wandb.enable=true
